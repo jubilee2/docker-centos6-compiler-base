@@ -1,0 +1,1 @@
+# docker-centos6-compiler-base

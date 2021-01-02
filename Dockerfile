@@ -6,9 +6,9 @@ RUN INSTALL_PKGS="devtoolset-8 rh-python36 curl git wget tar boost-devel swig zi
     yum clean all
 
 RUN source /opt/rh/devtoolset-8/enable && \
-    wget https://cmake.org/files/v3.12/cmake-3.12.3.tar.gz && \
-    tar zxvf cmake-3.12.3.tar.gz && rm -f cmake-3.12.3.tar.gz && \
-    cd cmake-3.12.3 && \
+    wget https://cmake.org/files/v3.15/cmake-3.15.7.tar.gz && \
+    tar zxvf cmake-3.15.7.tar.gz && rm -f cmake-3.15.7.tar.gz && \
+    cd cmake-3.15.7 && \
     ./bootstrap --prefix=/usr/local && \
     make -j$(nproc) && \
     make install
